@@ -39,7 +39,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   answer = gets.strip  
   if songs.include?(answer)
-    puts "Playing #{songs}"
+    puts "Playing #{answer}"
   elsif
     ((1..songs.size).include? answer.to_i)
     puts "Playing #{songs}"
