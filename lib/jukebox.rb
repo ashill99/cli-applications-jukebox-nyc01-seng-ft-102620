@@ -42,7 +42,7 @@ def play(songs)
     puts "Playing #{answer}"
   elsif
     ((1..songs.size).include? answer.to_i)
-    puts "Playing #{songs}"
+    puts "Playing #{songs[answer.to_i - 1}"
   else 
       puts "Invalid input, please try again"
   end
